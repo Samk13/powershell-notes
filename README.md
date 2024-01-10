@@ -24,7 +24,7 @@ Get-WmiObject -Class Win32_PhysicalMemoryArray | Select-Object -Property @{Name=
  Get-PhysicalDisk | Select-Object MediaType, BusType, Model
 ```
 
-## Get the current graphic drivers
+## Get the current graphic drivers version
 
 ```powershell
 Get-WmiObject Win32_VideoController | Select-Object Name, DriverVersion
