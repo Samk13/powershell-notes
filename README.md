@@ -28,4 +28,12 @@ Get-WmiObject -Class Win32_PhysicalMemoryArray | Select-Object -Property @{Name=
 
 ```powershell
 Get-WmiObject Win32_VideoController | Select-Object Name, DriverVersion
+# or
+Get-WmiObject Win32_VideoController | Select-Object -Property Name, DriverVersion
+```
+
+````log
+Name                          DriverVersion
+----                          -------------
+NVIDIA GeForce RTX 4090 SUPER 31.0.15.4633
 ```
