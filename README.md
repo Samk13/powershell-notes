@@ -37,3 +37,12 @@ Name                          DriverVersion
 ----                          -------------
 NVIDIA GeForce RTX 4090 SUPER 31.0.15.4633
 ```
+
+# Windows issues
+
+## Windows security not openening 
+- Open Command Prompt and execute:
+```powershell
+sfc /scannow
+DISM /Online /Cleanup-Image /RestoreHealth
+```
